@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    table, th, td {
+        border: 1px solid;
+    }
+    </style>
+    <script src="extrato.js"></script>
+    <title>extrato</title>
+</head>
+<body>
+    <div class="fullscreen">
+
+        <select id="opcoes">
+            <option>Transporte</option>
+            <option>Mercado</option>
+            <option>Aluguel</option>
+            <option>Investimento</option>
+        </select>
+        <br>
+        <input id="idValor" type="text" placeholder="valor"/>
+        <input id="idData" type="text" placeholder="data"/>
+        <br>
+
+        <button type="button" onclick="adcExtrato()">Adicionar</button>
+        <button type="button" onclick="resumoExtrato()">Calcular</button>
+        <br>
+
+        <table id="tabelaExtrato">
+        </table>
+
+        <p id="resumo"></p>
+    </div>
+</body>
+</html>

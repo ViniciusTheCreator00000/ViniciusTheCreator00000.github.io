@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="banco.css" media="screen" />
+    <script>
+        function adcLinhas() {
+
+        let table = document.getElementById("tabelaAdd");
+        let row = table.insertRow(0);
+
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+        let cell3 = row.insertCell(2);
+
+        cell1.innerHTML = "NEW CELL1";
+        cell2.innerHTML = "NEW CELL2";
+        cell3.innerHTML = "NEW CELL3";
+        }
+    </script>
+    <title>banco Massaio</title>
+
+</head>
+<body>
+    <div class="fullscreen">
+        <table id="tabelaAdd">
+            <tr>
+            <td>celula1</td>
+            <td>celula2</td>
+            <td>celula3</td>
+            </tr>
+            <tr>
+                <td>celula1</td>
+                <td>celula2</td>
+                <td>celula3</td>
+            </tr>
+        </table>
+        <button onclick="adcLinhas()">add row</button>
+    </div>
+</body>
+</html>
